@@ -1,13 +1,15 @@
 [Unit]
 Description=Small description of the service
-After=network.target
+After=network.target redis.service
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/script >> /var/log/__APP__/__APP__.log 2>&1
+WorkingDirectory=__FINALPATH__
+ExecStart=__FINALPATH__/nitter >> /var/log/__APP__/__APP__.log 2>&1
+Restart=always
+RestartSec=15
 
 [Install]
 WantedBy=multi-user.target

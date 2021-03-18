@@ -1,0 +1,7 @@
+SOURCE_URL=https://nim-lang.org/download/nim-1.4.2-linux_x32.tar.xz
+SOURCE_SUM=9106ee43d337239832fdb1b59a0e48676bd0e8e5666cdd4c9456e83041a275b5
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.xz
+SOURCE_IN_SUBDIR=true
+SOURCE_FILENAME=nim-1.4.4-linux_x64.tar.xz
+SOURCE_EXTRACT=true
