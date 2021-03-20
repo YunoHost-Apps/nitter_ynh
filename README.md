@@ -1,11 +1,11 @@
 # Nitter for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)  
-[![Install nitter with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
+[![Install Nitter with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
-> *This package allows you to install nitter quickly and simply on a YunoHost server.  
+> *This package allows you to install Nitter quickly and simply on a YunoHost server.  
 If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
 
 ## Overview
@@ -13,7 +13,7 @@ Nitter is an alternative front-end for Twitter that is faster than the official 
 
 This app requires a dedicated root domain. **ARM installations are NOT SUPPORTED.**
 
-**Shipped version:** 52a0b530cc35c4a8ab28b58994d8c07322a58a51
+**Shipped version:** 2021.02.16
 ## Screenshots
 
 ![](https://raw.githubusercontent.com/zedeus/nitter/master/screenshot.png)
@@ -24,7 +24,7 @@ This app requires a dedicated root domain. **ARM installations are NOT SUPPORTED
 
 ## Configuration
 
-The app's config file is stored in `/opt/yunohost/__APPNAME__/nitter.conf`. 
+The app's config file is stored in `/opt/yunohost/nitter/nitter.conf`. 
 Users can override the defaults and set custom settings at `https://instance-domain.tld/settings`.
 
 ## Documentation
@@ -33,8 +33,8 @@ Users can override the defaults and set custom settings at `https://instance-dom
 
 #### Multi-user support
 
-Are LDAP and HTTP auth supported? **No**
-Can the app be used by multiple users? **Yes**
+ * Are LDAP and HTTP auth supported? **No**
+ * Can the app be used by multiple users? **Yes**
 
 #### Supported architectures
 
@@ -44,9 +44,6 @@ Can the app be used by multiple users? **Yes**
 ## Limitations
 
 * ARM installations are not supported and will not work
-
-**More info on the documentation page:**  
-https://yunohost.org/packaging_apps
 
 ## Links
 
@@ -59,7 +56,6 @@ https://yunohost.org/packaging_apps
 
 ## Developer info
 
-**Only if you want to use a testing branch for coding, instead of merging directly into master.**
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/nitter_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
