@@ -76,7 +76,9 @@ then
 	arch=$(ynh_detect_arch)
 
 	# Download, check integrity, uncompress and patch the source from app.src
+	mv "$final_path/nitter.conf" "$final_path/nitter.conf.bak"
 	ynh_setup_source --dest_dir="$final_path"
+	mv "$final_path/nitter.conf.bak" "$final_path/nitter.conf"
 	ynh_setup_source --source_id="nim_$arch" --dest_dir="$final_path/.nim" || ynh_die --message="Your server's architecture is not supported"
 fi
 
