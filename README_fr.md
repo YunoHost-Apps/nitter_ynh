@@ -25,7 +25,7 @@ Cette application nécéssite un domaine dedié. **L'installation sur ARM n'est 
 
 ## Configuration
 
-Le ficher de configuration de l'appli se trouve à `/opt/yunohost/nitter/nitter.conf`. 
+Le ficher de configuration de l'appli se trouve à `/opt/yunohost/nitter/nitter.conf` (pour la première installation, les prochaines installations iront dans `nitter__2`, `nitter__3`, etc). 
 Les utilisateurs peuvent modifier les paramétres par défaut en visitant`https://instance-domain.tld/settings`.
 
 ## Documentation
