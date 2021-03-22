@@ -151,8 +151,10 @@ ynh_add_config --template="nitter.conf" --destination="$final_path/nitter.conf"
 #=================================================
 
 # Set permissions on app files
-chown -R root: $final_path
-chown -R $app: $final_path/tmp
+chown -R root:$app $final_path
+chown -R $app:$app $final_path/tmp
+chmod -R o-rwx $final_path
+chmod -R g-w $final_path
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
