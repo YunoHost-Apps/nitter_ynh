@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="nim redis-server libsass-dev"
+pkg_dependencies="acl nim redis-server libsass-dev"
 
 #=================================================
 # PERSONAL HELPERS
