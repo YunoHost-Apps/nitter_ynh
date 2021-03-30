@@ -98,6 +98,7 @@ ynh_script_progression --message="Making sure dedicated system user exists..." -
 
 # Create a dedicated user (if not existing)
 ynh_system_user_create --username=$app
+usermod -d $final_path $app 2>&1
 
 #=================================================
 # SPECIFIC UPGRADE
@@ -106,10 +107,11 @@ ynh_system_user_create --username=$app
 #=================================================
 ynh_script_progression --message="Compiling Nitter..." --weight=30
 pushd "$final_path" || ynh_die
-	export PATH="$final_path/.nim/bin:$PATH"
-	nimble build -d:release -y
-	nimble scss -y
-	mkdir -p ./tmp
+	chown -R $app:$app $final_path
+	sudo -u $app "PATH=/opt/yunohost/$app/.nim/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/.nim/bin/nimble build -d:release -y
+	sudo -u $app "PATH=/opt/yunohost/$app/.nim/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/.nim/bin/nimble scss -y
+	mkdir -p $final_path/tmp
+	chown -R root:root $final_path
 popd || ynh_die
 
 #=================================================
