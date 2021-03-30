@@ -65,6 +65,14 @@ ynh_script_progression --message="Recreating the dedicated system user..." --wei
 ynh_system_user_create --username=$app
 
 #=================================================
+# REINSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Reinstalling dependencies..." --weight=1
+
+# Define and install dependencies
+ynh_install_app_dependencies $pkg_dependencies
+
+#=================================================
 # RESTORE USER RIGHTS
 #=================================================
 
@@ -75,14 +83,6 @@ chmod -R o-rwx $final_path
 chmod -R g-w $final_path
 setfacl -n -m user:www-data:rx $final_path
 setfacl -n -R -m user:www-data:rx -m default:user:www-data:rx $final_path/public
-
-#=================================================
-# REINSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Reinstalling dependencies..." --weight=1
-
-# Define and install dependencies
-ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
 # SPECIFIC RESTORATION
