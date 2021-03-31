@@ -107,7 +107,7 @@ ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$final_path"
 
-ynh_setup_source --source_id="nim_$arch" --dest_dir="$final_path/.nim" || ynh_die --message="Your server's architecture is not supported"
+ynh_setup_source --source_id="nim_$arch" --dest_dir="$final_path/nim-installation" || ynh_die --message="Your server's architecture is not supported"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -134,8 +134,8 @@ usermod -d $final_path $app 2>&1
 ynh_script_progression --message="Compiling Nitter..." --weight=30
 pushd "$final_path" || ynh_die
 	chown -R $app:$app $final_path
-	sudo -u $app "PATH=/opt/yunohost/$app/.nim/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/.nim/bin/nimble build -d:release -y
-	sudo -u $app "PATH=/opt/yunohost/$app/.nim/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/.nim/bin/nimble scss -y
+	sudo -u $app "PATH=/opt/yunohost/$app/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/nim-installation/bin/nimble build -d:release -y
+	sudo -u $app "PATH=/opt/yunohost/$app/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/nim-installation/bin/nimble scss -y
 	mkdir -p $final_path/tmp
 	chown -R root:root $final_path
 popd || ynh_die
@@ -161,8 +161,7 @@ ynh_add_config --template="nitter.conf" --destination="$final_path/nitter.conf"
 # Set permissions to app files
 chown -R root:$app $final_path
 chown -R $app:$app $final_path/tmp
-chmod -R o-rwx $final_path
-chmod -R g-w $final_path
+chmod -R g=u,g-w,o-rwx $final_path
 setfacl -n -m user:www-data:rx $final_path
 setfacl -n -R -m user:www-data:rx -m default:user:www-data:rx $final_path/public
 
