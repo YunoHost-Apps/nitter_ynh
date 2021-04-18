@@ -132,13 +132,8 @@ usermod -d $final_path $app 2>&1
 # COMPILE NITTER
 #=================================================
 ynh_script_progression --message="Compiling Nitter..." --weight=30
-pushd "$final_path" || ynh_die
-	chown -R $app:$app $final_path
-	sudo -u $app "PATH=/opt/yunohost/$app/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/nim-installation/bin/nimble build -d:release -y
-	sudo -u $app "PATH=/opt/yunohost/$app/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" $final_path/nim-installation/bin/nimble scss -y
-	mkdir -p $final_path/tmp
-	chown -R root:root $final_path
-popd || ynh_die
+
+build_nitter
 
 #=================================================
 # SETUP SYSTEMD
@@ -159,11 +154,7 @@ ynh_add_config --template="nitter.conf" --destination="$final_path/nitter.conf"
 # SECURE FILES AND DIRECTORIES
 #=================================================
 # Set permissions to app files
-chown -R root:$app $final_path
-chown -R $app:$app $final_path/tmp
-chmod -R g=u,g-w,o-rwx $final_path
-setfacl -n -m user:www-data:rx $final_path
-setfacl -n -R -m user:www-data:rx -m default:user:www-data:rx $final_path/public
+set_permissions
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
