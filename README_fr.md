@@ -13,7 +13,7 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 
 Cette application nécéssite un domaine dedié. **L'installation sur ARM n'est PAS PRISE EN CHARGE.**
 
-**Version incluse :** 2021.02.16
+**Version incluse :** 2021-06-23
 
 ## Captures d'écran
 

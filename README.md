@@ -13,7 +13,8 @@ Nitter is an alternative front-end for Twitter that is faster than the official 
 
 This app requires a dedicated root domain. **ARM installations are NOT SUPPORTED.**
 
-**Shipped version:** 2021.02.16
+**Shipped version:** 2021-06-23
+
 ## Screenshots
 
 ![](https://raw.githubusercontent.com/zedeus/nitter/master/screenshot.png)
