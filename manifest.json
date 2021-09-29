@@ -26,15 +26,14 @@
             {
                 "name": "domain",
                 "type": "domain",
-                "example": "example.com"
             },
             {
                 "name": "is_public",
                 "type": "boolean",
                 "default": true,
                 "help": {
-                    "en": "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit",
-                    "fr": "Si public, tout le monde pourra utilizer cette instance Nitter pour parcourir Twitter. Notez bien q'un usage trop intensif pourrait faire que l'instance rencontre les limites de l'API Twitter"
+                    "en": "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit.",
+                    "fr": "Si public, tout le monde pourra utiliser cette instance Nitter pour parcourir Twitter. Notez qu'un usage trop intensif peut être bridé par l'API Twitter au dela d'un certain seuil."
                 }
             },
             {
@@ -61,11 +60,11 @@
                 ],
                 "ask": {
                     "en": "Choose a default theme for this instance",
-                    "fr": "Choisissez un théme par dèfault pour cette instance"
+                    "fr": "Choisissez un thème par défaut pour cette instance"
                 },
                 "help": {
                     "en": "Users can override this setting",
-                    "fr": "Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Les utilisateurs peuvent modifier ce paramétre"
                 }
             },
             {
@@ -78,8 +77,8 @@
                     "fr": "Remplacer les liens Youtube avec une instance Invidious"
                 },
                 "help": {
-                    "en": "You can choose to rewrite YouTube links in tweets to point to an Invidious instance. Use one from https://instances.invidious.io/ or install Invidious on your server! Users can override this setting",
-                    "fr": "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Invidious. Choisissez-en une de https://instances.invidious.io/ ou installez Invidious sur votre serveur! Les utilisatuers peuvent modifier ce paramétre"
+                    "en": "You can choose to rewrite YouTube links in tweets to point to an Invidious instance. Use one from https://instances.invidious.io/ or install Invidious on your server! Users can override this setting.",
+                    "fr": "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Invidious. Choisissez-en une de https://instances.invidious.io/ ou installez Invidious sur votre serveur! Les utilisateus peuvent modifier ce paramétre."
                 }
             },
             {
@@ -92,8 +91,8 @@
                     "fr": "Remplacer les liens Instagram avec une instance Bibliogram"
                 },
                 "help": {
-                    "en": "You can choose to rewrite Instagram links in tweets to point to a Bibliogram instance. Use one from https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md or install Bibliogram on your server! Users can override this setting",
-                    "fr": "Vous pouvez choisir de réécrire les liens Instagram dans les tweets pour pointer vers une instance Bibliogram. Choisissez-en une de https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md ou installez Bibliogram sur votre serveur! Les utilisatuers peuvent modifier ce paramétre"
+                    "en": "You can choose to rewrite Instagram links in tweets to point to a Bibliogram instance. Use one from https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md or install Bibliogram on your server! Users can override this setting.",
+                    "fr": "Vous pouvez choisir de réécrire les liens Instagram dans les tweets pour pointer vers une instance Bibliogram. Choisissez-en une de https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md ou installez Bibliogram sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
                 }
             },
             {
@@ -102,11 +101,11 @@
                 "default": true,
                 "ask": {
                     "en": "Proxy Twitter videos through Nitter by default",
-                    "fr": "Retransmettre les videos Twitter par le serveur par défaut"
+                    "fr": "Retransmettre les vidéos Twitter via le serveur par défaut"
                 },
                 "help": {
                     "en": "Users can override this setting",
-                    "fr": "Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Les utilisateurs peuvent modifier ce paramétre"
                 }
             },
             {
@@ -118,8 +117,8 @@
                     "fr": "Activer la lecture des videos HLS par défaut"
                 },
                 "help": {
-                    "en": "Requires Javascript. Users can override this setting",
-                    "fr": "Cette fonctionalité utilize le Javascript. Les utilisatuers peuvent modifier ce paramétre"
+                    "en": "Requires Javascript. Users can override this setting.",
+                    "fr": "Cette fonctionalité requiert Javascript. Les utilisateurs peuvent modifier ce paramétre."
                 }
             },
             {
@@ -131,8 +130,8 @@
                     "fr": "Activer le défilement infini par défaut"
                 },
                 "help": {
-                    "en": "Experimental, requires Javascript. Users can override this setting",
-                    "fr": "Cette fonctionalité est éxperimentale et utilize le Javascript. Les utilisatuers peuvent modifier ce paramétre"
+                    "en": "Experimental, requires Javascript. Users can override this setting.",
+                    "fr": "Cette fonctionalité est expérimentale et requiert Javascript. Les utilisateurs peuvent modifier ce paramétre."
                 }
             }
         ]
