@@ -65,7 +65,7 @@
                 },
                 "help": {
                     "en": "Users can override this setting",
-                    "fr": "Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Les utilisateurs peuvent modifier ce paramétre"
                 }
             },
             {
@@ -79,7 +79,7 @@
                 },
                 "help": {
                     "en": "You can choose to rewrite YouTube links in tweets to point to an Invidious instance. Use one from https://instances.invidious.io/ or install Invidious on your server! Users can override this setting",
-                    "fr": "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Invidious. Choisissez-en une de https://instances.invidious.io/ ou installez Invidious sur votre serveur! Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Invidious. Choisissez-en une de https://instances.invidious.io/ ou installez Invidious sur votre serveur! Les utilisateus peuvent modifier ce paramétre"
                 }
             },
             {
@@ -93,7 +93,7 @@
                 },
                 "help": {
                     "en": "You can choose to rewrite Instagram links in tweets to point to a Bibliogram instance. Use one from https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md or install Bibliogram on your server! Users can override this setting",
-                    "fr": "Vous pouvez choisir de réécrire les liens Instagram dans les tweets pour pointer vers une instance Bibliogram. Choisissez-en une de https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md ou installez Bibliogram sur votre serveur! Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Vous pouvez choisir de réécrire les liens Instagram dans les tweets pour pointer vers une instance Bibliogram. Choisissez-en une de https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md ou installez Bibliogram sur votre serveur! Les utilisateurs peuvent modifier ce paramétre"
                 }
             },
             {
@@ -106,7 +106,7 @@
                 },
                 "help": {
                     "en": "Users can override this setting",
-                    "fr": "Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Les utilisateurs peuvent modifier ce paramétre"
                 }
             },
             {
@@ -119,7 +119,7 @@
                 },
                 "help": {
                     "en": "Requires Javascript. Users can override this setting",
-                    "fr": "Cette fonctionalité utilize le Javascript. Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Cette fonctionalité utilize le Javascript. Les utilisateurs peuvent modifier ce paramétre"
                 }
             },
             {
@@ -132,7 +132,7 @@
                 },
                 "help": {
                     "en": "Experimental, requires Javascript. Users can override this setting",
-                    "fr": "Cette fonctionalité est éxperimentale et utilize le Javascript. Les utilisatuers peuvent modifier ce paramétre"
+                    "fr": "Cette fonctionalité est éxperimentale et utilize le Javascript. Les utilisateurs peuvent modifier ce paramétre"
                 }
             }
         ]
