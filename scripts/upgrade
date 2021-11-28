@@ -68,8 +68,6 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
-	arch=$(ynh_detect_arch)
-
 	# Download, check integrity, uncompress and patch the source from app.src
 	mv "$final_path/nitter.conf" "$final_path/nitter.conf.bak"
 	ynh_setup_source --dest_dir="$final_path" --source_id="$architecture"
