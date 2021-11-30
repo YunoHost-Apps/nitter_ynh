@@ -29,6 +29,7 @@ proxy_videos=$(ynh_app_setting_get --app=$app --key=proxy_videos)
 hls_playback=$(ynh_app_setting_get --app=$app --key=hls_playback)
 infinite_scroll=$(ynh_app_setting_get --app=$app --key=infinite_scroll)
 hmac_key=$(ynh_app_setting_get --app=$app --key=hmac_key)
+architecture=$YNH_ARCH
 
 #=================================================
 # CHECK VERSION
@@ -67,13 +68,10 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
-	arch=$(ynh_detect_arch)
-
 	# Download, check integrity, uncompress and patch the source from app.src
 	mv "$final_path/nitter.conf" "$final_path/nitter.conf.bak"
-	ynh_setup_source --dest_dir="$final_path"
+	ynh_setup_source --dest_dir="$final_path" --source_id="$architecture"
 	mv "$final_path/nitter.conf.bak" "$final_path/nitter.conf"
-	ynh_setup_source --source_id="nim_$arch" --dest_dir="$final_path/nim-installation" || ynh_die --message="Your server's architecture is not supported"
 fi
 
 #=================================================
