@@ -74,7 +74,7 @@
                 "default": "",
                 "ask": {
                     "en": "Replace YouTube links with an Invidious instance",
-                    "fr": "Remplacer les liens Youtube avec une instance Invidious"
+                    "fr": "Remplacer les liens YouTube avec une instance Invidious"
                 },
                 "help": {
                     "en": "You can choose to rewrite YouTube links in tweets to point to an Invidious instance. Use one from https://instances.invidious.io/ or install Invidious on your server! Users can override this setting.",
