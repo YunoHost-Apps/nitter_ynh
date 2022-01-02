@@ -70,7 +70,8 @@ then
 
 	# Download, check integrity, uncompress and patch the source from app.src
 	mv "$final_path/nitter.conf" "$final_path/nitter.conf.bak"
-	ynh_setup_source --dest_dir="$final_path" --source_id="$architecture"
+	ynh_setup_source --dest_dir="$final_path" --source_id="app"
+	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id="$architecture"
 	mv "$final_path/nitter.conf.bak" "$final_path/nitter.conf"
 fi
 
