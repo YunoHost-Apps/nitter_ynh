@@ -22,7 +22,7 @@
         "redis"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
                 "type": "domain"
@@ -40,7 +40,7 @@
                 "name": "title",
                 "type": "string",
                 "default": "nitter",
-                "help": {
+                "ask": {
                     "en": "Name of the instance",
                     "fr": "Nom de l'instance"
                 }
