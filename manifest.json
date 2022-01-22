@@ -6,7 +6,7 @@
         "en": "Alternative front-end for Twitter that respects your privacy",
         "fr": "Interface alternative pour Twitter qui respecte votre vie privée"
     },
-    "version": "2022.01.03~ynh1",
+    "version": "2022.01.23~ynh1",
     "url": "https://github.com/zedeus/nitter",
     "license": "AGPL-3.0-only",
     "maintainer": {
