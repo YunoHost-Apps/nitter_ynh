@@ -11,9 +11,9 @@ Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install
 ## Vue d'ensemble
 Nitter est une interface alternative pour Twitter qui est plus rapide que le site officiel, respecte votre vie privée, est ne nécessite pas de s'enregistrer. Son nterface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
 
-Cette application nécéssite un domaine dedié. **L'installation sur ARM n'est PAS PRISE EN CHARGE.**
+Cette application nécéssite un domaine dedié.
 
-**Version incluse :** 2022-02-11
+**Version incluse :** 2022-06-09
 
 ## Captures d'écran
 
@@ -36,14 +36,6 @@ Les utilisateurs peuvent modifier les paramétres par défaut en visitant`https:
 
 * L'authentification LDAP et HTTP est-elle prise en charge ? **Non**
 * L'application peut-elle être utilisée par plusieurs utilisateurs ? **Oui**
-
-#### Architectures supportées
-
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/nitter%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/)
-* ARMv8-A - **PAS PRIS EN CHARGE**
-## Limitations
-
-* Les installations sur ARM ne sont pas prises en charge et ne marcheront pas.
 
 ## Liens
 

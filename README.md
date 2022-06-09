@@ -11,9 +11,9 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 ## Overview
 Nitter is an alternative front-end for Twitter that is faster than the official website, respects your privacy, and does not require login. It uses responsive design (works well on all screen sizes). Nitter also offers to generate RSS feeds from Twitter user timeleines.
 
-This app requires a dedicated root domain. **ARM installations are NOT SUPPORTED.**
+This app requires a dedicated root domain.
 
-**Shipped version:** 2022-02-11
+**Shipped version:** 2022-06-09
 
 ## Screenshots
 
@@ -36,15 +36,6 @@ Users can override the defaults and set custom settings at `https://instance-dom
 
  * Are LDAP and HTTP auth supported? **No**
  * Can the app be used by multiple users? **Yes**
-
-#### Supported architectures
-
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/nitter%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/)
-* ARMv8-A - **NOT SUPPORTED**
-
-## Limitations
-
-* ARM installations are not supported and will not work
 
 ## Links
 
