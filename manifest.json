@@ -46,7 +46,7 @@
             {
                 "name": "title",
                 "type": "string",
-                "default": "nitter",
+                "default": "Nitter",
                 "ask": {
                     "en": "Name of the instance",
                     "fr": "Nom de l'instance"
