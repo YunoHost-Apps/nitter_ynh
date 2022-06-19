@@ -46,13 +46,13 @@ services = ["__APP__"]
         help = "Proxy Twitter videos through Nitter by default"
         bind = "Scanner.Extractor:__FINALPATH__/nitter.conf"
 
-        [main.config.$replace_reddit]
+        [main.config.replace_reddit]
         ask = "Libreddit instance"
         type = "string"
         help = "Replace Instagram links with a Libreddit instance"
         bind = "replaceInstagram:__FINALPATH__/nitter.conf"
 
-        [main.config.$replace_instagram]
+        [main.config.replace_instagram]
         ask = "Bibliogram instance"
         type = "string"
         help = "Replace Instagram links with a Bibliogram instance"

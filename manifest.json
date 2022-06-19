@@ -8,13 +8,20 @@
     },
     "version": "2022.02.11~ynh1",
     "url": "https://github.com/zedeus/nitter",
+    "upstream": {
+        "license": "AGPL-3.0-only",
+        "website": "https://nitter.net/",
+        "demo": "https://nitter.net/",
+        "admindoc": "https://github.com/zedeus/nitter/wiki",
+        "code": "https://github.com/zedeus/nitter"
+    },
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Jules Bertholet",
         "email": "jules.bertholet@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": true,
     "services": [
