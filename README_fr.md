@@ -30,8 +30,23 @@ Inspired by the Invidious project.
 
 
 **Version incluse :** 2022.02.11~ynh1
+
+**Démo :** https://nitter.net/
+
+## Captures d'écran
+
+![Capture d'écran de Nitter](./doc/screenshots/screenshot.png)
+
+## Avertissements / informations importantes
+
+### Configuration
+
+Nitter config file is stored in `/opt/yunohost/nitter/nitter.conf` (for the first instance, subsequent installs will go in `nitter__2`, `nitter__3`, etc). Users can override the defaults and set custom settings at `https://instance-domain.tld/settings`.
 ## Documentations et ressources
 
+* Site officiel de l'app : <https://nitter.net/>
+* Documentation officielle de l'admin : <https://github.com/zedeus/nitter/wiki>
+* Dépôt de code officiel de l'app : <https://github.com/zedeus/nitter>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_nitter>
 * Signaler un bug : <https://github.com/YunoHost-Apps/nitter_ynh/issues>
 
