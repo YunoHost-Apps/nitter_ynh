@@ -26,11 +26,7 @@ theme=$(ynh_app_setting_get --app=$app --key=theme)
 replace_youtube=$(ynh_app_setting_get --app=$app --key=replace_youtube)
 replace_instagram=$(ynh_app_setting_get --app=$app --key=replace_instagram)
 replace_reddit=$(ynh_app_setting_get --app=$app --key=replace_reddit)
-proxy_videos=$(ynh_app_setting_get --app=$app --key=proxy_videos)
-hls_playback=$(ynh_app_setting_get --app=$app --key=hls_playback)
-infinite_scroll=$(ynh_app_setting_get --app=$app --key=infinite_scroll)
 hmac_key=$(ynh_app_setting_get --app=$app --key=hmac_key)
-architecture=$YNH_ARCH
 
 #=================================================
 # CHECK VERSION
@@ -72,7 +68,7 @@ then
 	# Download, check integrity, uncompress and patch the source from app.src
 	mv "$final_path/nitter.conf" "$final_path/nitter.conf.bak"
 	ynh_setup_source --dest_dir="$final_path" --source_id="app"
-	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id="$architecture"
+	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH
 	mv "$final_path/nitter.conf.bak" "$final_path/nitter.conf"
 fi
 

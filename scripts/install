@@ -28,22 +28,6 @@ theme=$YNH_APP_ARG_THEME
 replace_youtube=$YNH_APP_ARG_REPLACE_YOUTUBE
 replace_instagram=$YNH_APP_ARG_REPLACE_INSTAGRAM
 replace_reddit=$YNH_APP_ARG_REPLACE_REDDIT
-
-if [ $YNH_APP_ARG_PROXY_VIDEOS -eq 1 ]; then
-	proxy_videos="true"
-else
-	proxy_videos="false"
-fi
-if [ $YNH_APP_ARG_HLS_PLAYBACK -eq 1 ]; then
-	hls_playback="true"
-else
-	hls_playback="false"
-fi
-if [ $YNH_APP_ARG_INFINITE_SCROLL -eq 1 ]; then
-	infinite_scroll="true"
-else
-	infinite_scroll="false"
-fi
 hmac_key=$(ynh_string_random --length=64)
 
 app=$YNH_APP_INSTANCE_NAME
@@ -71,9 +55,6 @@ ynh_app_setting_set --app=$app --key=theme --value=$theme
 ynh_app_setting_set --app=$app --key=replace_youtube --value=$replace_youtube
 ynh_app_setting_set --app=$app --key=replace_instagram --value=$replace_instagram
 ynh_app_setting_set --app=$app --key=replace_reddit --value=$replace_reddit
-ynh_app_setting_set --app=$app --key=proxy_videos --value=$proxy_videos
-ynh_app_setting_set --app=$app --key=hls_playback --value=$hls_playback
-ynh_app_setting_set --app=$app --key=infinite_scroll --value=$infinite_scroll
 ynh_app_setting_set --app=$app --key=hmac_key --value=$hmac_key
 
 #=================================================

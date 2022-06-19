@@ -115,45 +115,6 @@
                     "en": "You can choose to rewrite Reddit links in tweets to point to a Libreddit instance. Use https://libredd.it/ or install Libreddit on your server! Users can override this setting.",
                     "fr": "Vous pouvez choisir de réécrire les liens Instagram dans les tweets pour pointer vers une instance Bibliogram. Choisissez https://libredd.it/ ou installez Libreddit sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
                 }
-            },
-            {
-                "name": "proxy_videos",
-                "type": "boolean",
-                "default": true,
-                "ask": {
-                    "en": "Proxy Twitter videos through Nitter by default",
-                    "fr": "Retransmettre les vidéos Twitter via le serveur par défaut"
-                },
-                "help": {
-                    "en": "Users can override this setting",
-                    "fr": "Les utilisateurs peuvent modifier ce paramétre"
-                }
-            },
-            {
-                "name": "hls_playback",
-                "type": "boolean",
-                "default": true,
-                "ask": {
-                    "en": "Enable HLS video playback by default",
-                    "fr": "Activer la lecture des videos HLS par défaut"
-                },
-                "help": {
-                    "en": "Requires Javascript. Users can override this setting.",
-                    "fr": "Cette fonctionalité requiert Javascript. Les utilisateurs peuvent modifier ce paramétre."
-                }
-            },
-            {
-                "name": "infinite_scroll",
-                "type": "boolean",
-                "default": false,
-                "ask": {
-                    "en": "Enable infinite scrolling by default",
-                    "fr": "Activer le défilement infini par défaut"
-                },
-                "help": {
-                    "en": "Experimental, requires Javascript. Users can override this setting.",
-                    "fr": "Cette fonctionalité est expérimentale et requiert Javascript. Les utilisateurs peuvent modifier ce paramétre."
-                }
             }
         ]
     }
