@@ -27,7 +27,8 @@ title=$YNH_APP_ARG_TITLE
 theme=$YNH_APP_ARG_THEME
 replace_youtube=$YNH_APP_ARG_REPLACE_YOUTUBE
 replace_instagram=$YNH_APP_ARG_REPLACE_INSTAGRAM
-architecture=$YNH_ARCH
+replace_reddit=$YNH_APP_ARG_REPLACE_REDDIT
+
 if [ $YNH_APP_ARG_PROXY_VIDEOS -eq 1 ]; then
 	proxy_videos="true"
 else
@@ -69,6 +70,7 @@ ynh_app_setting_set --app=$app --key=title --value=$title
 ynh_app_setting_set --app=$app --key=theme --value=$theme
 ynh_app_setting_set --app=$app --key=replace_youtube --value=$replace_youtube
 ynh_app_setting_set --app=$app --key=replace_instagram --value=$replace_instagram
+ynh_app_setting_set --app=$app --key=replace_reddit --value=$replace_reddit
 ynh_app_setting_set --app=$app --key=proxy_videos --value=$proxy_videos
 ynh_app_setting_set --app=$app --key=hls_playback --value=$hls_playback
 ynh_app_setting_set --app=$app --key=infinite_scroll --value=$infinite_scroll
@@ -100,7 +102,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$final_path" --source_id="app"
-ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id="$architecture"
+ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH
 
 #=================================================
 # NGINX CONFIGURATION
