@@ -15,18 +15,19 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-A free and open source alternative Twitter front-end focused on privacy and performance.
-Inspired by the Invidious project.
+Nitter est une interface alternative pour Twitter qui est plus rapide que le site officiel, respecte votre vie privée, est ne nécessite pas de s'enregistrer. Son nterface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
 
-### Features
-- No JavaScript or ads
-- All requests go through the backend, client never talks to Twitter
-- Prevents Twitter from tracking your IP or JavaScript fingerprint
-- Uses Twitter's unofficial API (no rate limits or developer account required)
-- Lightweight (for @nim_lang, 60KB vs 784KB from twitter.com)
-- RSS feeds
-- Themes
-- Mobile support (responsive design)
+Cette application nécéssite un domaine dedié.
+
+### Fonctionnalités
+- Pas de JavaScript ni de publicités
+- Toutes les demandes passent par le backend, le client ne communique jamais avec Twitter
+- Empêche Twitter de suivre votre adresse IP ou votre empreinte JavaScript
+- Utilise l'API non officielle de Twitter (aucune limite de débit ni compte de développeur requis)
+- Léger (pour @nim_lang, 60KB contre 784KB de twitter.com)
+- Flux RSS
+- Thèmes
+- Support mobile (conception réactive)
 
 
 **Version incluse :** 2022.06.19~ynh1
@@ -41,7 +42,9 @@ Inspired by the Invidious project.
 
 ### Configuration
 
-Nitter config file is stored in `/opt/yunohost/nitter/nitter.conf` (for the first instance, subsequent installs will go in `nitter__2`, `nitter__3`, etc). Users can override the defaults and set custom settings at `https://instance-domain.tld/settings`.
+Cette application nécéssite un domaine dedié.
+
+Le ficher de configuration de Nitter se trouve à `/opt/yunohost/nitter/nitter.conf` (pour la première installation, les prochaines installations iront dans `nitter__2`, `nitter__3`, etc). Les utilisateurs peuvent modifier les paramétres par défaut en visitant `https://instance-domain.tld/settings`.
 ## Documentations et ressources
 
 * Site officiel de l'app : <https://nitter.net/>
