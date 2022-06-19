@@ -17,9 +17,8 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Nitter est une interface alternative pour Twitter qui est plus rapide que le site officiel, respecte votre vie privée, est ne nécessite pas de s'enregistrer. Son nterface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
 
-Cette application nécéssite un domaine dedié.
-
 ### Fonctionnalités
+
 - Pas de JavaScript ni de publicités
 - Toutes les demandes passent par le backend, le client ne communique jamais avec Twitter
 - Empêche Twitter de suivre votre adresse IP ou votre empreinte JavaScript
