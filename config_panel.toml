@@ -25,17 +25,20 @@ services = ["__APP__"]
         [main.config.replace_reddit]
         ask = "Libreddit instance"
         type = "string"
+        default = "https://libredd.it/"
         help = "Replace Instagram links with a Libreddit instance"
         bind = "replaceInstagram:__FINALPATH__/nitter.conf"
 
         [main.config.replace_instagram]
         ask = "Bibliogram instance"
         type = "string"
+        default = "https://bibliogram.art/"
         help = "Replace Instagram links with a Bibliogram instance"
         bind = "replaceInstagram:__FINALPATH__/nitter.conf"
 
         [main.config.replace_youtube]
         ask = "Invidious instance"
         type = "string"
+        default = "https://invidious.fdn.fr/"
         help = "Replace YouTube links with an Invidious instance"
         bind = "replaceYouTube:__FINALPATH__/nitter.conf"
