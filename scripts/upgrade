@@ -66,10 +66,8 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	mv "$final_path/nitter.conf" "$final_path/nitter.conf.bak"
 	ynh_setup_source --dest_dir="$final_path" --source_id="app"
-	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH
-	mv "$final_path/nitter.conf.bak" "$final_path/nitter.conf"
+	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH --keep="$final_path/nitter.conf"
 fi
 
 #=================================================
