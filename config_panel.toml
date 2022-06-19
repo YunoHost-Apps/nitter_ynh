@@ -22,30 +22,6 @@ services = ["__APP__"]
         help = "Choose a default theme for this instance"
         bind = "theme:__FINALPATH__/nitter.conf"
 
-        [main.config.hls_playback]
-        ask = "Enable HLS"
-        type = "boolean"
-        yes = "true"
-        no = "false"
-        help = "Enable HLS video playback by default"
-        bind = "hlsPlayback:__FINALPATH__/nitter.conf"
-
-        [main.config.infinite_scroll]
-        ask = "Enable infinite scrolling"
-        type = "boolean"
-        yes = "true"
-        no = "false"
-        help = "Enable infinite scrolling by default"
-        bind = "infiniteScroll:__FINALPATH__/nitter.conf"
-
-        [main.config.proxy_videos]
-        ask = "Proxy Twitter videos"
-        type = "boolean"
-        yes = "true"
-        no = "false"
-        help = "Proxy Twitter videos through Nitter by default"
-        bind = "Scanner.Extractor:__FINALPATH__/nitter.conf"
-
         [main.config.replace_reddit]
         ask = "Libreddit instance"
         type = "string"
