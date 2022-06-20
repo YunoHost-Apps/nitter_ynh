@@ -26,8 +26,8 @@ services = ["__APP__"]
         ask = "Libreddit instance"
         type = "string"
         default = "https://libredd.it/"
-        help = "Replace Instagram links with a Libreddit instance"
-        bind = "replaceInstagram:__FINALPATH__/nitter.conf"
+        help = "Replace Reddit links with a Libreddit instance"
+        bind = "replaceReddit:__FINALPATH__/nitter.conf"
 
         [main.config.replace_instagram]
         ask = "Bibliogram instance"
