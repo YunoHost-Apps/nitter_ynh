@@ -6,15 +6,22 @@
         "en": "Alternative front-end for Twitter that respects your privacy",
         "fr": "Interface alternative pour Twitter qui respecte votre vie privée"
     },
-    "version": "2022.06.09~ynh1",
+    "version": "2022.06.19~ynh1",
     "url": "https://github.com/zedeus/nitter",
+    "upstream": {
+        "license": "AGPL-3.0-only",
+        "website": "https://nitter.net/",
+        "demo": "https://nitter.net/",
+        "admindoc": "https://github.com/zedeus/nitter/wiki",
+        "code": "https://github.com/zedeus/nitter"
+    },
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Jules Bertholet",
         "email": "jules.bertholet@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": true,
     "services": [
@@ -39,7 +46,7 @@
             {
                 "name": "title",
                 "type": "string",
-                "default": "nitter",
+                "default": "Nitter",
                 "ask": {
                     "en": "Name of the instance",
                     "fr": "Nom de l'instance"
@@ -96,42 +103,17 @@
                 }
             },
             {
-                "name": "proxy_videos",
-                "type": "boolean",
-                "default": true,
+                "name": "replace_reddit",
+                "type": "string",
+                "optional": true,
+                "default": "",
                 "ask": {
-                    "en": "Proxy Twitter videos through Nitter by default",
-                    "fr": "Retransmettre les vidéos Twitter via le serveur par défaut"
+                    "en": "Replace Reddit links with a Libreddit instance",
+                    "fr": "Remplacer les liens Reddit avec une instance Libreddit"
                 },
                 "help": {
-                    "en": "Users can override this setting",
-                    "fr": "Les utilisateurs peuvent modifier ce paramétre"
-                }
-            },
-            {
-                "name": "hls_playback",
-                "type": "boolean",
-                "default": true,
-                "ask": {
-                    "en": "Enable HLS video playback by default",
-                    "fr": "Activer la lecture des videos HLS par défaut"
-                },
-                "help": {
-                    "en": "Requires Javascript. Users can override this setting.",
-                    "fr": "Cette fonctionalité requiert Javascript. Les utilisateurs peuvent modifier ce paramétre."
-                }
-            },
-            {
-                "name": "infinite_scroll",
-                "type": "boolean",
-                "default": false,
-                "ask": {
-                    "en": "Enable infinite scrolling by default",
-                    "fr": "Activer le défilement infini par défaut"
-                },
-                "help": {
-                    "en": "Experimental, requires Javascript. Users can override this setting.",
-                    "fr": "Cette fonctionalité est expérimentale et requiert Javascript. Les utilisateurs peuvent modifier ce paramétre."
+                    "en": "You can choose to rewrite Reddit links in tweets to point to a Libreddit instance. Use https://libredd.it/ or install Libreddit on your server! Users can override this setting.",
+                    "fr": "Vous pouvez choisir de réécrire les liens Reddit dans les tweets pour pointer vers une instance Libreddit. Choisissez https://libredd.it/ ou installez Libreddit sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
                 }
             }
         ]

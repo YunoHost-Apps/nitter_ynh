@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/zedeus/nitter/tarball/b398136742f9b784b2d5c8b5baa9f25a3560b5a0
-SOURCE_SUM=4d8646398bc668f014472396597a81ed7a7d5350187a5ef7b48e9a8aaffd3a6e
+SOURCE_URL=https://github.com/zedeus/nitter/tarball/5e827c91aa1b5f41cc03c5bb07b6fe629002430b
+SOURCE_SUM=e4395aecfa59c464987fcd61cc60442b5024fea80815ae86d48cd0b35a13f15d
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true

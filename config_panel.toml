@@ -1,0 +1,44 @@
+version = "1.0"
+
+[main]
+name = "Nitter configuration"
+services = ["__APP__"]
+
+    [main.config]
+    name = "Configuration Options"
+
+        [main.config.title]
+        ask = "Default title"
+        type = "string"
+        default = "Nitter"
+        help = "Choose a default title for this instance"
+        bind = "title:__FINALPATH__/nitter.conf"
+
+        [main.config.theme]
+        ask = "Default theme"
+        type = "select"
+        choices = ["Auto", "Black", "Mastodon", "Nitter", "Pleroma", "Twitter", "Twitter dark"]
+        default = "Auto"
+        help = "Choose a default theme for this instance"
+        bind = "theme:__FINALPATH__/nitter.conf"
+
+        [main.config.replace_reddit]
+        ask = "Libreddit instance"
+        type = "string"
+        default = "https://libredd.it/"
+        help = "Replace Instagram links with a Libreddit instance"
+        bind = "replaceInstagram:__FINALPATH__/nitter.conf"
+
+        [main.config.replace_instagram]
+        ask = "Bibliogram instance"
+        type = "string"
+        default = "https://bibliogram.art/"
+        help = "Replace Instagram links with a Bibliogram instance"
+        bind = "replaceInstagram:__FINALPATH__/nitter.conf"
+
+        [main.config.replace_youtube]
+        ask = "Invidious instance"
+        type = "string"
+        default = "https://invidious.fdn.fr/"
+        help = "Replace YouTube links with an Invidious instance"
+        bind = "replaceYouTube:__FINALPATH__/nitter.conf"
