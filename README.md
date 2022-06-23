@@ -29,7 +29,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Shipped version:** 2022.06.19~ynh2
+**Shipped version:** 2022.06.23~ynh1
 
 **Demo:** https://nitter.net/
 
