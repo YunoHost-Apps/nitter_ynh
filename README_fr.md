@@ -29,7 +29,8 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 - Support mobile (conception réactive)
 
 
-**Version incluse :** 2022.06.23~ynh1
+**Version incluse :** 2022.06.23~ynh1
+
 
 **Démo :** https://nitter.net/
 

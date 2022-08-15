@@ -31,6 +31,7 @@ Inspired by the Invidious project.
 
 **Shipped version:** 2022.06.23~ynh1
 
+
 **Demo:** https://nitter.net/
 
 ## Screenshots
