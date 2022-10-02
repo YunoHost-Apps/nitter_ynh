@@ -29,7 +29,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Shipped version:** 2022.09.20~ynh1 *(:warning: This is the `testing` branch. The [`master` branch](https://github.com/YunoHost-Apps/nitter_ynh/tree/master) used in the catalog is currently on version 2022.06.23\~ynh1.)*
+**Shipped version:** 2022.09.20~ynh1
 
 
 **Demo:** https://nitter.net/
