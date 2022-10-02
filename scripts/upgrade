@@ -75,7 +75,7 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]; then
 
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$final_path" --source_id="app"
-	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH --keep="$final_path/nitter.conf"
+	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH --keep="nitter.conf"
 fi
 
 chmod 750 "$final_path"
