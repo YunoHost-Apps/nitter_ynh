@@ -29,7 +29,8 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 - Support mobile (conception réactive)
 
 
-**Version incluse :** 2022.06.23~ynh1
+**Version incluse :** 2022.09.20~ynh1 *(:warning: Il s'agit de la branche `testing`. La [branche `master`](https://github.com/YunoHost-Apps/nitter_ynh/tree/master) utilisée dans le catalogue est actuellement en 2022.06.23\~ynh1.)*
+
 
 **Démo :** https://nitter.net/
 
@@ -44,6 +45,10 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 Cette application nécéssite un domaine dedié.
 
 Le ficher de configuration de Nitter se trouve à `/var/www/nitter/nitter.conf` (pour la première installation, les prochaines installations iront dans `nitter__2`, `nitter__3`, etc). Les utilisateurs peuvent modifier les paramétres par défaut en visitant `https://instance-domain.tld/settings`.
+## :red_circle: Fonctions indésirables
+
+- **Non-free Network Services**: Promotes or depends entirely on a non-free network service.
+
 ## Documentations et ressources
 
 * Site officiel de l'app : <https://nitter.net/>
