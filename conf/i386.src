@@ -1,7 +1,7 @@
-SOURCE_URL=https://nim-lang.org/download/nim-1.6.6-linux_x32.tar.xz
-SOURCE_SUM=464bf143559d0fa0d68b0bae9beab1b43364ba97efae4164930bf9444c2e39f6
+SOURCE_URL=https://nim-lang.org/download/nim-1.6.10-linux_x32.tar.xz
+SOURCE_SUM=e5fd9efe1a2b22e4f4c88574db9bc5a22bc511b5e101cf9e16b1f2c7cf4d657c
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.xz
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=nim-1.6.6-linux_x32.tar.xz
+SOURCE_FILENAME=nim-1.6.10-linux_x32.tar.xz
 SOURCE_EXTRACT=true
