@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Nitter for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Working status](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Working status](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+
 [![Install Nitter with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
 *[Lire ce readme en français.](./README_fr.md)*
