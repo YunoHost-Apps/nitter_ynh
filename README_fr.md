@@ -5,15 +5,16 @@ It shall NOT be edited by hand.
 
 # Nitter pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+
 [![Installer Nitter avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Nitter rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Nitter rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Nitter est une interface alternative pour Twitter qui est plus rapide que le site officiel, respecte votre vie privée, est ne nécessite pas de s'enregistrer. Son nterface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
 
@@ -29,14 +30,13 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 - Support mobile (conception réactive)
 
 
-**Version incluse :** 2022.09.20~ynh1
-
+**Version incluse :** 2023.02.02~ynh1
 
 **Démo :** https://nitter.net/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Nitter](./doc/screenshots/screenshot.png)
+![Capture d’écran de Nitter](./doc/screenshots/screenshot.png)
 
 ## Avertissements / informations importantes
 
@@ -51,9 +51,9 @@ Le ficher de configuration de Nitter se trouve à `/var/www/nitter/nitter.conf` 
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://nitter.net/>
-* Documentation officielle de l'admin : <https://github.com/zedeus/nitter/wiki>
-* Dépôt de code officiel de l'app : <https://github.com/zedeus/nitter>
+* Site officiel de l’app : <https://nitter.net/>
+* Documentation officielle de l’admin : <https://github.com/zedeus/nitter/wiki>
+* Dépôt de code officiel de l’app : <https://github.com/zedeus/nitter>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_nitter>
 * Signaler un bug : <https://github.com/YunoHost-Apps/nitter_ynh/issues>
 
@@ -69,4 +69,4 @@ ou
 sudo yunohost app upgrade nitter -u https://github.com/YunoHost-Apps/nitter_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>

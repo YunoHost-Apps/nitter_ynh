@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Nitter for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Working status](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Working status](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+
 [![Install Nitter with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -19,6 +20,7 @@ A free and open source alternative Twitter front-end focused on privacy and perf
 Inspired by the Invidious project.
 
 ### Features
+
 - No JavaScript or ads
 - All requests go through the backend, client never talks to Twitter
 - Prevents Twitter from tracking your IP or JavaScript fingerprint
@@ -29,8 +31,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Shipped version:** 2022.09.20~ynh1
-
+**Shipped version:** 2023.02.02~ynh1
 
 **Demo:** https://nitter.net/
 
