@@ -1,7 +1,0 @@
-SOURCE_URL=https://github.com/nim-lang/nightlies/releases/download/2023-02-19-version-1-6-6af6818fe934e8e66d7024cfda6197632896b91c/nim-1.6.11-linux_armv7l.tar.xz
-SOURCE_SUM=c7ee22c8f1153c5872fa08f0f288a0b52eb27d8c2ec39aa46e4b7125515185a3
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.xz
-SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=nim-1.6.11-linux_armv7l.tar.xz
-SOURCE_EXTRACT=true
