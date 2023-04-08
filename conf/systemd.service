@@ -1,5 +1,5 @@
 [Unit]
-Description=Nitter: Alternative Twitter front-end 
+Description=Nitter: alternative Twitter front-end 
 After=network.target redis.service
 
 [Service]

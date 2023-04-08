@@ -4,9 +4,6 @@
 # COMMON VARIABLES
 #=================================================
 
-# dependencies used by the app
-#REMOVEME? pkg_dependencies="acl nim libsass-dev"
-
 #=================================================
 # PERSONAL HELPERS
 #=================================================
