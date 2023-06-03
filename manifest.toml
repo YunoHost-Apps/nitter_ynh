@@ -43,15 +43,6 @@ ram.runtime = "50M"
     type = "string"
     default = "Nitter"
 
-    [install.theme]
-    ask.en = "Choose a default theme for this instance"
-    ask.fr = "Choisissez un thème par défaut pour cette instance"
-    help.en = "Users can override this setting"
-    help.fr = "Les utilisateurs peuvent modifier ce paramétre"
-    type = "string"
-    default = "Auto"
-    choices = ["Auto", "Black", "Mastodon", "Nitter", "Pleroma", "Twitter", "Twitter dark"]
-
     [install.replace_youtube]
     ask.en = "Replace YouTube links with an Invidious instance"
     ask.fr = "Remplacer les liens YouTube avec une instance Invidious"

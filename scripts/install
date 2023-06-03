@@ -14,7 +14,9 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 hmac_key=$(ynh_string_random --length=64)
+theme="Auto"
 ynh_app_setting_set --app=$app --key=hmac_key --value=$hmac_key
+ynh_app_setting_set --app=$app --key=theme --value=$theme
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
