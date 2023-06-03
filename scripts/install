@@ -29,6 +29,15 @@ chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
+# SPECIFIC SETUP
+#=================================================
+# COMPILE NITTER
+#=================================================
+ynh_script_progression --message="Compiling Nitter..." --weight=30
+
+build_nitter
+
+#=================================================
 # SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
@@ -46,15 +55,6 @@ set_permissions
 ynh_use_logrotate
 
 yunohost service add $app --description="Alternative front-end for Twitter that respects your privacy" --log="/var/log/$app/$app.log"
-
-#=================================================
-# SPECIFIC SETUP
-#=================================================
-# COMPILE NITTER
-#=================================================
-ynh_script_progression --message="Compiling Nitter..." --weight=30
-
-build_nitter
 
 #=================================================
 # ADD A CONFIGURATION
