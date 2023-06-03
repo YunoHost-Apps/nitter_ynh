@@ -46,10 +46,3 @@ services = ["__APP__"]
         help = "Replace Reddit links with a Teddit or Libreddit instance"
         bind = "replaceReddit:__INSTALL_DIR__/nitter.conf"
 
-        [main.config.replace_instagram]
-        ask = "Bibliogram instance"
-        type = "string"
-        default = "https://bibliogram.art/"
-        help = "Replace Instagram links with a Bibliogram instance"
-        bind = "replaceInstagram:__INSTALL_DIR__/nitter.conf"
-

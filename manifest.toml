@@ -44,28 +44,19 @@ ram.runtime = "50M"
     default = "Nitter"
 
     [install.replace_youtube]
-    ask.en = "Replace YouTube links with an Invidious instance"
-    ask.fr = "Remplacer les liens YouTube avec une instance Invidious"
-    help.en = "You can choose to rewrite YouTube links in tweets to point to an Invidious instance. Use one from https://instances.invidious.io/ or install Invidious on your server! Users can override this setting."
-    help.fr = "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Invidious. Choisissez-en une de https://instances.invidious.io/ ou installez Invidious sur votre serveur! Les utilisateus peuvent modifier ce paramétre."
-    type = "string"
-    optional = true
-    default = ""
-
-    [install.replace_instagram]
-    ask.en = "Replace Instagram links with a Bibliogram instance"
-    ask.fr = "Remplacer les liens Instagram avec une instance Bibliogram"
-    help.en = "You can choose to rewrite Instagram links in tweets to point to a Bibliogram instance. Use one from https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md or install Bibliogram on your server! Users can override this setting."
-    help.fr = "Vous pouvez choisir de réécrire les liens Instagram dans les tweets pour pointer vers une instance Bibliogram. Choisissez-en une de https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md ou installez Bibliogram sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
+    ask.en = "Replace YouTube links with a Piped or Invidious instance"
+    ask.fr = "Remplacer les liens YouTube avec une instance Piped ou Invidious"
+    help.en = "You can choose to rewrite YouTube links in tweets to point to a Piped or Invidious instance. Use one from https://github.com/TeamPiped/Piped/wiki/Instances or https://instances.invidious.io/, or install Invidious on your server! Users can override this setting."
+    help.fr = "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Piped ou Invidious. Choisissez-en une de https://github.com/TeamPiped/Piped/wiki/Instances ou https://instances.invidious.io/, ou installez Invidious sur votre serveur! Les utilisateus peuvent modifier ce paramétre."
     type = "string"
     optional = true
     default = ""
 
     [install.replace_reddit]
-    ask.en = "Replace Reddit links with a Libreddit instance"
-    ask.fr = "Remplacer les liens Reddit avec une instance Libreddit"
-    help.en = "You can choose to rewrite Reddit links in tweets to point to a Libreddit instance. Use https://libredd.it/ or install Libreddit on your server! Users can override this setting."
-    help.fr = "Vous pouvez choisir de réécrire les liens Reddit dans les tweets pour pointer vers une instance Libreddit. Choisissez https://libredd.it/ ou installez Libreddit sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
+    ask.en = "Replace Reddit links with a Libreddit or Teddit instance"
+    ask.fr = "Remplacer les liens Reddit avec une instance Libreddit ou Teddit"
+    help.en = "You can choose to rewrite Reddit links in tweets to point to a Libreddit or Teddit instance. Use https://libredd.it/ or install Libreddit on your server! Users can override this setting."
+    help.fr = "Vous pouvez choisir de réécrire les liens Reddit dans les tweets pour pointer vers une instance Libreddit ou Teddit. Choisissez https://libredd.it/ ou installez Libreddit sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
     type = "string"
     optional = true
     default = ""
