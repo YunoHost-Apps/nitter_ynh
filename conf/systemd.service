@@ -1,13 +1,13 @@
 [Unit]
-Description=Nitter: Alternative Twitter front-end 
+Description=Nitter: alternative Twitter front-end 
 After=network.target redis.service
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/nitter
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/nitter
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
