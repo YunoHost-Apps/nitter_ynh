@@ -12,7 +12,7 @@ ask = "Default title"
 type = "string"
 default = "Nitter"
 help = "Choose a default title for this instance"
-bind = "title:__FINALPATH__/nitter.conf"
+bind = "title:__INSTALL_DIR__/nitter.conf"
 
 [main.config.theme]
 ask = "Default theme"
@@ -30,26 +30,26 @@ choices = [
 ]
 default = "Auto"
 help = "Choose a default theme for this instance"
-bind = "theme:__FINALPATH__/nitter.conf"
+bind = "theme:__INSTALL_DIR__/nitter.conf"
 
 [main.config.replace_youtube]
 ask = "Piped/Invidious instance"
 type = "string"
 default = "https://invidious.fdn.fr/"
 help = "Replace YouTube links with a Piped or Invidious instance"
-bind = "replaceYouTube:__FINALPATH__/nitter.conf"
+bind = "replaceYouTube:__INSTALL_DIR__/nitter.conf"
 
 [main.config.replace_reddit]
 ask = "Teddit/Libreddit instance"
 type = "string"
 default = "https://libredd.it/"
 help = "Replace Reddit links with a Teddit or Libreddit instance"
-bind = "replaceReddit:__FINALPATH__/nitter.conf"
+bind = "replaceReddit:__INSTALL_DIR__/nitter.conf"
 
 [main.config.replace_instagram]
 ask = "Bibliogram instance"
 type = "string"
 default = "https://bibliogram.art/"
 help = "Replace Instagram links with a Bibliogram instance"
-bind = "replaceInstagram:__FINALPATH__/nitter.conf"
+bind = "replaceInstagram:__INSTALL_DIR__/nitter.conf"
 
