@@ -31,7 +31,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Shipped version:** 2023.05.30~ynh1
+**Shipped version:** 2023.07.10~ynh1
 
 **Demo:** https://nitter.net/
 
@@ -39,13 +39,6 @@ Inspired by the Invidious project.
 
 ![Screenshot of Nitter](./doc/screenshots/screenshot.png)
 
-## Disclaimers / important information
-
-### Configuration
-
-This app requires a dedicated root domain.
-
-Nitter config file is stored in `/var/www/nitter/nitter.conf` (for the first instance, subsequent installs will go in `nitter__2`, `nitter__3`, etc). Users can override the defaults and set custom settings at `https://instance-domain.tld/settings`.
 ## :red_circle: Antifeatures
 
 - **Non-free Network Services**: Promotes or depends entirely on a non-free network service.

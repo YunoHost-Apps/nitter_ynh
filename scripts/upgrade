@@ -10,44 +10,21 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# LOAD SETTINGS
-#=================================================
-ynh_script_progression --message="Loading installation settings..." --weight=1
-
-app=$YNH_APP_INSTANCE_NAME
-
-domain=$(ynh_app_setting_get --app=$app --key=domain)
-path_url=$(ynh_app_setting_get --app=$app --key=path)
-final_path=$(ynh_app_setting_get --app=$app --key=final_path)
-port=$(ynh_app_setting_get --app=$app --key=port)
-title=$(ynh_app_setting_get --app=$app --key=title)
-theme=$(ynh_app_setting_get --app=$app --key=theme)
-replace_youtube=$(ynh_app_setting_get --app=$app --key=replace_youtube)
-replace_instagram=$(ynh_app_setting_get --app=$app --key=replace_instagram)
-replace_reddit=$(ynh_app_setting_get --app=$app --key=replace_reddit)
-hmac_key=$(ynh_app_setting_get --app=$app --key=hmac_key)
-
-#=================================================
 # CHECK VERSION
 #=================================================
-ynh_script_progression --message="Checking version..."
 
 upgrade_type=$(ynh_check_app_version_changed)
 
 #=================================================
-# BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
+# ENSURE DOWNWARD COMPATIBILITY
 #=================================================
-ynh_script_progression --message="Backing up the app before upgrading (may take a while)..." --weight=1
+ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
-# Backup the current version of the app
-ynh_backup_before_upgrade
-ynh_clean_setup() {
-	ynh_clean_check_starting
-	# Restore it if the upgrade fails
-	ynh_restore_upgradebackup
-}
-# Exit if an error occurs during the execution of the script
-ynh_abort_if_errors
+# If theme doesn't exist, create it
+if [ -z "${theme:-}" ]; then
+    theme="Auto"
+    ynh_app_setting_set --app=$app --key=theme --value=$theme
+fi
 
 #=================================================
 # STANDARD UPGRADE STEPS
@@ -59,14 +36,6 @@ ynh_script_progression --message="Stopping a systemd service..." --weight=1
 ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app/$app.log"
 
 #=================================================
-# CREATE DEDICATED USER
-#=================================================
-ynh_script_progression --message="Making sure dedicated system user exists..." --weight=1
-
-# Create a dedicated user (if not existing)
-ynh_system_user_create --username=$app --home_dir="$final_path"
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
@@ -74,20 +43,12 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]; then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$final_path" --source_id="app"
-	ynh_setup_source --dest_dir="$final_path/nim-installation" --source_id=$YNH_ARCH --keep="nitter.conf"
+	ynh_setup_source --dest_dir="$install_dir"
+	ynh_setup_source --dest_dir="$install_dir/nim-installation" --source_id="nim" --keep="nitter.conf"
 fi
 
-chmod 750 "$final_path"
-chmod -R o-rwx "$final_path"
-chown -R $app:www-data "$final_path"
-
-#=================================================
-# UPGRADE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Upgrading dependencies..." --weight=1
-
-ynh_install_app_dependencies $pkg_dependencies
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -111,7 +72,7 @@ build_nitter
 #=================================================
 ynh_script_progression --message="Updating a configuration file..."
 
-ynh_add_config --template="nitter.conf" --destination="$final_path/nitter.conf"
+ynh_add_config --template="nitter.conf" --destination="$install_dir/nitter.conf"
 
 #=================================================
 # SETUP SYSTEMD
@@ -151,13 +112,6 @@ yunohost service add $app --description="Alternative front-end for Twitter that 
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
-
-#=================================================
-# RELOAD NGINX
-#=================================================
-ynh_script_progression --message="Reloading NGINX web server..." --weight=1
-
-ynh_systemd_action --service_name=nginx --action=reload
 
 #=================================================
 # END OF SCRIPT

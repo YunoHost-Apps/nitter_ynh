@@ -1,0 +1,89 @@
+packaging_format = 2
+
+id = "nitter"
+name = "Nitter"
+description.en = "Alternative front-end for Twitter that respects your privacy"
+description.fr = "Interface alternative pour Twitter qui respecte votre vie privée"
+
+version = "2023.07.10~ynh1"
+
+maintainers = ["Jules Bertholet"]
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://nitter.net/"
+demo = "https://nitter.net/"
+admindoc = "https://github.com/zedeus/nitter/wiki"
+code = "https://github.com/zedeus/nitter"
+
+[integration]
+yunohost = ">= 11.1.21"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = true
+disk = "50M"
+ram.build = "2000M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+    full_domain = true
+
+    [install.init_main_permission]
+    help.en = "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit."
+    help.fr = "Si public, tout le monde pourra utiliser cette instance Nitter pour parcourir Twitter. Notez qu'un usage trop intensif peut être bridé par l'API Twitter au dela d'un certain seuil."
+    type = "group"
+    default = "visitors"
+
+    [install.title]
+    ask.en = "Name of the instance"
+    ask.fr = "Nom de l'instance"
+    type = "string"
+    default = "Nitter"
+
+    [install.replace_youtube]
+    ask.en = "Replace YouTube links with a Piped or Invidious instance"
+    ask.fr = "Remplacer les liens YouTube avec une instance Piped ou Invidious"
+    help.en = "You can choose to rewrite YouTube links in tweets to point to a Piped or Invidious instance. Use one from https://github.com/TeamPiped/Piped/wiki/Instances or https://instances.invidious.io/, or install Invidious on your server! Users can override this setting."
+    help.fr = "Vous pouvez choisir de réécrire les liens YouTube dans les tweets pour pointer vers une instance Piped ou Invidious. Choisissez-en une de https://github.com/TeamPiped/Piped/wiki/Instances ou https://instances.invidious.io/, ou installez Invidious sur votre serveur! Les utilisateus peuvent modifier ce paramétre."
+    type = "string"
+    optional = true
+    default = ""
+
+    [install.replace_reddit]
+    ask.en = "Replace Reddit links with a Libreddit or Teddit instance"
+    ask.fr = "Remplacer les liens Reddit avec une instance Libreddit ou Teddit"
+    help.en = "You can choose to rewrite Reddit links in tweets to point to a Libreddit or Teddit instance. Use https://libredd.it/ or install Libreddit on your server! Users can override this setting."
+    help.fr = "Vous pouvez choisir de réécrire les liens Reddit dans les tweets pour pointer vers une instance Libreddit ou Teddit. Choisissez https://libredd.it/ ou installez Libreddit sur votre serveur! Les utilisateurs peuvent modifier ce paramétre."
+    type = "string"
+    optional = true
+    default = ""
+
+[resources]
+        [resources.sources.main]
+        url = "https://github.com/zedeus/nitter/tarball/0bc3c153d9b38a3c02f321fb64a375fef6b97e8e"
+        sha256 = "0ec00b67ed8b2b33f5dd5008705985ea4853c666938ffe560c79f498c4a3baf3"
+
+        [resources.sources.nim]
+        amd64.url = "https://nim-lang.org/download/nim-1.6.14-linux_x64.tar.xz"
+        amd64.sha256 = "1e7073c05600f2be5f2d9018e73f4584f0369442455ab27521ca499b47eef904"
+        arm64.url = "https://github.com/nim-lang/nightlies/releases/download/2023-07-04-version-1-6-1cd48e4b2abd867adf1ab52a70a1d8f1c6ac77c4/nim-1.6.15-linux_arm64.tar.xz"
+        arm64.sha256 = "4ff08b1785e60bdac17fe4a40ce119b6f9d40fad0421e9576097f95122ce4125"
+        armhf.url = "https://github.com/nim-lang/nightlies/releases/download/2023-07-04-version-1-6-1cd48e4b2abd867adf1ab52a70a1d8f1c6ac77c4/nim-1.6.15-linux_armv7l.tar.xz"
+        armhf.sha256 = "7441e7feb3e3293c8662011e174d913ae276c853255f5792b31c3c2ec4d0ed30"
+        i386.url = "https://nim-lang.org/download/nim-1.6.14-linux_x32.tar.xz"
+        i386.sha256 = "18d285f62392b3cd725af91df4a7b3b99bbcd5446881725e18e372e3a2c3a89b"
+
+    [resources.ports]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "acl nim libsass-dev"
