@@ -63,18 +63,18 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/zedeus/nitter/tarball/38985af6ed30f050201b15425cdac0dc2e286b6d"
-        sha256 = "e3d4c27d6287ad382502ae2e577182d67d99fb305bea498200c7c34215236f55"
+        url = "https://github.com/zedeus/nitter/tarball/0bc3c153d9b38a3c02f321fb64a375fef6b97e8e"
+        sha256 = "0ec00b67ed8b2b33f5dd5008705985ea4853c666938ffe560c79f498c4a3baf3"
 
         [resources.sources.nim]
-        amd64.url = "https://nim-lang.org/download/nim-1.6.12-linux_x64.tar.xz"
-        amd64.sha256 = "6b22894d0db974e10bd271217ce7f01a5fcd0b37cb3ea9d539734cb46f2cac75"
-        arm64.url = "https://github.com/nim-lang/nightlies/releases/download/2023-06-01-version-1-6-b855404c711730c41114e86631fa19414080f999/nim-1.6.13-linux_arm64.tar.xz"
-        arm64.sha256 = "730f4d6d98e65a5587ff4b198161725b7f787aed729d69045fbe38e0035ae8fb"
-        armhf.url = "https://github.com/nim-lang/nightlies/releases/download/2023-06-01-version-1-6-b855404c711730c41114e86631fa19414080f999/nim-1.6.13-linux_armv7l.tar.xz"
-        armhf.sha256 = "c34bc29d20c70c513382df8ef6d834d0588e4e99692a012c9b399020f49a4c1a"
-        i386.url = "https://nim-lang.org/download/nim-1.6.12-linux_x32.tar.xz"
-        i386.sha256 = "23b8069b54c22a0512e2e90c22abf7f976badd9277b03b25edd992e49ac4ea9e"
+        amd64.url = "https://nim-lang.org/download/nim-1.6.14-linux_x64.tar.xz"
+        amd64.sha256 = "1e7073c05600f2be5f2d9018e73f4584f0369442455ab27521ca499b47eef904"
+        arm64.url = "https://github.com/nim-lang/nightlies/releases/download/2023-07-04-version-1-6-1cd48e4b2abd867adf1ab52a70a1d8f1c6ac77c4/nim-1.6.15-linux_arm64.tar.xz"
+        arm64.sha256 = "4ff08b1785e60bdac17fe4a40ce119b6f9d40fad0421e9576097f95122ce4125"
+        armhf.url = "https://github.com/nim-lang/nightlies/releases/download/2023-07-04-version-1-6-1cd48e4b2abd867adf1ab52a70a1d8f1c6ac77c4/nim-1.6.15-linux_armv7l.tar.xz"
+        armhf.sha256 = "7441e7feb3e3293c8662011e174d913ae276c853255f5792b31c3c2ec4d0ed30"
+        i386.url = "https://nim-lang.org/download/nim-1.6.14-linux_x32.tar.xz"
+        i386.sha256 = "18d285f62392b3cd725af91df4a7b3b99bbcd5446881725e18e372e3a2c3a89b"
 
     [resources.ports]
 
