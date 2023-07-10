@@ -70,9 +70,9 @@ build_nitter
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Updating a configuration file..."
+#ynh_script_progression --message="Updating a configuration file..."
 
-ynh_add_config --template="nitter.conf" --destination="$install_dir/nitter.conf"
+#ynh_add_config --template="nitter.conf" --destination="$install_dir/nitter.conf"
 
 #=================================================
 # SETUP SYSTEMD
