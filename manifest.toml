@@ -5,7 +5,7 @@ name = "Nitter"
 description.en = "Alternative front-end for Twitter that respects your privacy"
 description.fr = "Interface alternative pour Twitter qui respecte votre vie privée"
 
-version = "2023.05.30~ynh2"
+version = "2023.07.10~ynh1"
 
 maintainers = ["Jules Bertholet"]
 
