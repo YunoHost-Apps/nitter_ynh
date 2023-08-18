@@ -17,7 +17,7 @@ admindoc = "https://github.com/zedeus/nitter/wiki"
 code = "https://github.com/zedeus/nitter"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -29,7 +29,6 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-    full_domain = true
 
     [install.init_main_permission]
     help.en = "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit."
