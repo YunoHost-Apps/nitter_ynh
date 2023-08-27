@@ -5,7 +5,7 @@ name = "Nitter"
 description.en = "Alternative front-end for Twitter that respects your privacy"
 description.fr = "Interface alternative pour Twitter qui respecte votre vie privée"
 
-version = "2023.07.22~ynh1"
+version = "2023.08.08~ynh1"
 
 maintainers = ["Jules Bertholet"]
 
@@ -17,7 +17,7 @@ admindoc = "https://github.com/zedeus/nitter/wiki"
 code = "https://github.com/zedeus/nitter"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -29,7 +29,6 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-    full_domain = true
 
     [install.init_main_permission]
     help.en = "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit."
@@ -63,8 +62,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/zedeus/nitter/tarball/72d8f35cd1ec1205824711a41dab4b8d7a6b298a"
-        sha256 = "962d9f523b408cb67c6ac20072dd19ef51de2f76494c8ba3b05b7ef4d1a03374"
+        url = "https://github.com/zedeus/nitter/tarball/d7ca353a55ea3440a2ec1f09155951210a374cc7"
+        sha256 = "028ec2f9c93c9f65259d4a6632ee4a77d9b43516921f4e741e94cfcbb0530f4a"
 
         [resources.sources.nim]
         amd64.url = "https://nim-lang.org/download/nim-1.6.14-linux_x64.tar.xz"
