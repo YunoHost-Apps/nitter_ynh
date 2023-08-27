@@ -56,7 +56,7 @@ set_permissions
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
-yunohost service add $app --description="Alternative front-end for Twitter that respects your privacy" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Alternative front-end for Twitter" --log="/var/log/$app/$app.log"
 
 #=================================================
 # ADD A CONFIGURATION

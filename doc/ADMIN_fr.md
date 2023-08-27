@@ -1,1 +1,1 @@
-Le ficher de configuration de Nitter se trouve à `/var/www/nitter/nitter.conf` (pour la première installation, les prochaines installations iront dans `nitter__2`, `nitter__3`, etc). Les utilisateurs peuvent modifier les paramétres par défaut en visitant `https://__DOMAIN__/settings`.
+Le ficher de configuration de Nitter se trouve à `__INSTALL_DIR__/nitter.conf`. Les utilisateurs peuvent modifier les paramétres par défaut en visitant `https://__DOMAIN__/settings`.
