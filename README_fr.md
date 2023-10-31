@@ -47,7 +47,7 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 * Site officiel de l’app : <https://nitter.net/>
 * Documentation officielle de l’admin : <https://github.com/zedeus/nitter/wiki>
 * Dépôt de code officiel de l’app : <https://github.com/zedeus/nitter>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_nitter>
+* YunoHost Store: <https://apps.yunohost.org/app/nitter>
 * Signaler un bug : <https://github.com/YunoHost-Apps/nitter_ynh/issues>
 
 ## Informations pour les développeurs
