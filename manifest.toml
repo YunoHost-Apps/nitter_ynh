@@ -20,8 +20,11 @@ code = "https://github.com/zedeus/nitter"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = true
+
 disk = "50M"
 ram.build = "2000M"
 ram.runtime = "50M"
@@ -85,4 +88,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "acl nim libsass-dev"
+    packages = "acl, nim, libsass-dev"
