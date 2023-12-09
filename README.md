@@ -48,7 +48,7 @@ Inspired by the Invidious project.
 * Official app website: <https://nitter.net/>
 * Official admin documentation: <https://github.com/zedeus/nitter/wiki>
 * Upstream app code repository: <https://github.com/zedeus/nitter>
-* YunoHost documentation for this app: <https://yunohost.org/app_nitter>
+* YunoHost Store: <https://apps.yunohost.org/app/nitter>
 * Report a bug: <https://github.com/YunoHost-Apps/nitter_ynh/issues>
 
 ## Developer info
