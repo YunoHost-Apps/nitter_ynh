@@ -67,6 +67,7 @@ ram.runtime = "50M"
         [resources.sources.main]
         url = "https://github.com/zedeus/nitter/tarball/d7ca353a55ea3440a2ec1f09155951210a374cc7"
         sha256 = "028ec2f9c93c9f65259d4a6632ee4a77d9b43516921f4e741e94cfcbb0530f4a"
+        autoupdate.strategy = "latest_github_commit"
 
         [resources.sources.nim]
         amd64.url = "https://nim-lang.org/download/nim-1.6.14-linux_x64.tar.xz"
