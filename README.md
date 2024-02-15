@@ -16,7 +16,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-A free and open source alternative Twitter front-end focused on privacy and performance.
+Nitter is a free and open source alternative Twitter front-end focused on privacy and performance.
 Inspired by the Invidious project.
 
 ### Features
@@ -31,7 +31,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Shipped version:** 2023.08.08~ynh1
+**Shipped version:** 2023.08.08~ynh2
 
 **Demo:** https://nitter.net/
 

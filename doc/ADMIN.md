@@ -1,1 +1,1 @@
-Nitter config file is stored in `/var/www/nitter/nitter.conf` (for the first instance, subsequent installs will go in `nitter__2`, `nitter__3`, etc). Users can override the defaults and set custom settings at `https://__DOMAIN__/settings`.
+Nitter config file is stored in `__INSTALL_DIR__/nitter.conf`. Users can override the defaults and set custom settings at `https://__DOMAIN__/settings`.

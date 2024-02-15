@@ -5,7 +5,7 @@ name = "Nitter"
 description.en = "Alternative front-end for Twitter that respects your privacy"
 description.fr = "Interface alternative pour Twitter qui respecte votre vie privée"
 
-version = "2023.08.08~ynh1"
+version = "2023.08.08~ynh2"
 
 maintainers = ["Jules Bertholet"]
 
@@ -20,8 +20,11 @@ code = "https://github.com/zedeus/nitter"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = true
+
 disk = "50M"
 ram.build = "2000M"
 ram.runtime = "50M"
@@ -64,6 +67,7 @@ ram.runtime = "50M"
         [resources.sources.main]
         url = "https://github.com/zedeus/nitter/tarball/d7ca353a55ea3440a2ec1f09155951210a374cc7"
         sha256 = "028ec2f9c93c9f65259d4a6632ee4a77d9b43516921f4e741e94cfcbb0530f4a"
+        autoupdate.strategy = "latest_github_commit"
 
         [resources.sources.nim]
         amd64.url = "https://nim-lang.org/download/nim-1.6.14-linux_x64.tar.xz"
@@ -85,4 +89,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "acl nim libsass-dev"
+    packages = "acl, nim, libsass-dev"

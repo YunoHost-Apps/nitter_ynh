@@ -51,14 +51,6 @@ chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
-# NGINX CONFIGURATION
-#=================================================
-ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
-
-# Create a dedicated NGINX config
-ynh_add_nginx_config
-
-#=================================================
 # SPECIFIC UPGRADE
 #=================================================
 # COMPILE NITTER
@@ -75,36 +67,23 @@ build_nitter
 #ynh_add_config --template="nitter.conf" --destination="$install_dir/nitter.conf"
 
 #=================================================
-# SETUP SYSTEMD
+# REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
-ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
+ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
+
+# Create a dedicated NGINX config
+ynh_add_nginx_config
 
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-#=================================================
-# SECURE FILES AND DIRECTORIES
-#=================================================
+# Use logrotate to manage app-specific logfile(s)
+ynh_use_logrotate --non-append
 
 # Set permissions on app files
 set_permissions
 
-#=================================================
-# GENERIC FINALIZATION
-#=================================================
-# SETUP LOGROTATE
-#=================================================
-ynh_script_progression --message="Upgrading logrotate configuration..." --weight=1
-
-# Use logrotate to manage app-specific logfile(s)
-ynh_use_logrotate --non-append
-
-#=================================================
-# INTEGRATE SERVICE IN YUNOHOST
-#=================================================
-ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
-
-yunohost service add $app --description="Alternative front-end for Twitter that respects your privacy" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Alternative front-end for Twitter" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
