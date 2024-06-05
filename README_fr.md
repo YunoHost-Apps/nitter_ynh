@@ -40,7 +40,7 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 
 ## :red_circle: Anti-fonctionnalités
 
-- **Services réseau non libres**: Promeut ou utilise des services réseau non libres.
+- **Services réseau non libres **: Promeut ou utilise des services réseau non libres.
 
 ## Documentations et ressources
 
