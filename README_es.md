@@ -39,7 +39,7 @@ Inspired by the Invidious project.
 
 ![Captura de Nitter](./doc/screenshots/screenshot.png)
 
-## :red_circle: funcionalidades no deseadas
+## :red_circle: Características no deseables
 
 - **Non-free Network Services**: Promotes or depends entirely on a non-free network service.
 
