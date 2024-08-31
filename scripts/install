@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -15,55 +9,54 @@ source /usr/share/yunohost/helpers
 
 hmac_key=$(ynh_string_random --length=64)
 theme="Auto"
-ynh_app_setting_set --app=$app --key=hmac_key --value=$hmac_key
-ynh_app_setting_set --app=$app --key=theme --value=$theme
+ynh_app_setting_set --key=hmac_key --value=$hmac_key
+ynh_app_setting_set --key=theme --value=$theme
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=1
+ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 ynh_setup_source --dest_dir="$install_dir/nim-installation" --source_id="nim"
 
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
-
+#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
+#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
 #=================================================
 # SPECIFIC SETUP
 #=================================================
 # COMPILE NITTER
 #=================================================
-ynh_script_progression --message="Compiling Nitter..." --weight=30
+ynh_script_progression "Compiling Nitter..."
 
 build_nitter
 
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
+ynh_script_progression "Adding system configurations related to $app..."
 
 # Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 # Create a dedicated systemd config
-ynh_add_systemd_config
+ynh_config_add_systemd
 
 # Set permissions to app files
 set_permissions
 
 # Use logrotate to manage application logfile(s)
-ynh_use_logrotate
+ynh_config_add_logrotate
 
 yunohost service add $app --description="Alternative front-end for Twitter" --log="/var/log/$app/$app.log"
 
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding a configuration file..."
+ynh_script_progression "Adding $app's configuration..."
 
-ynh_add_config --template="nitter.conf" --destination="$install_dir/nitter.conf"
+ynh_config_add --template="nitter.conf" --destination="$install_dir/nitter.conf"
 
 chmod 400 "$install_dir/nitter.conf"
 chown $app:$app "$install_dir/nitter.conf"
@@ -71,13 +64,13 @@ chown $app:$app "$install_dir/nitter.conf"
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Starting a systemd service..." --weight=1
+ynh_script_progression "Starting $app's systemd service..."
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service=$app --action="start"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
