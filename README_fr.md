@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Nitter pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/nitter.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
 
 [![Installer Nitter avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
@@ -30,7 +30,7 @@ Nitter est une interface alternative pour Twitter qui est plus rapide que le sit
 - Support mobile (conception réactive)
 
 
-**Version incluse :** 2023.10.31~ynh1
+**Version incluse :** 2023.10.31~ynh2
 
 **Démo :** <https://nitter.net/>
 

@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Nitter para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/nitter.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
 
 [![Instalar Nitter con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
@@ -31,7 +31,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Versión actual:** 2023.10.31~ynh1
+**Versión actual:** 2023.10.31~ynh2
 
 **Demo:** <https://nitter.net/>
 
@@ -53,7 +53,7 @@ Inspired by the Invidious project.
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/nitter_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/nitter_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
