@@ -5,7 +5,7 @@ name = "Nitter"
 description.en = "Alternative front-end for Twitter that respects your privacy"
 description.fr = "Interface alternative pour Twitter qui respecte votre vie privée"
 
-version = "2023.10.31~ynh1"
+version = "2023.10.31~ynh2"
 
 maintainers = ["Jules Bertholet"]
 
@@ -89,4 +89,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "acl, nim, libsass-dev"
+    packages = ["acl", "nim", "libsass-dev", "redis-server"]
