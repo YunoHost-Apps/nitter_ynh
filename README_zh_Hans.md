@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Nitter
 
-[![集成程度](https://dash.yunohost.org/integration/nitter.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/nitter)](https://ci-apps.yunohost.org/ci/apps/nitter/)
+![工作状态](https://apps.yunohost.org/badge/state/nitter)
+![维护状态](https://apps.yunohost.org/badge/maintained/nitter)
 
 [![使用 YunoHost 安装 Nitter](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
@@ -31,7 +33,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**分发版本：** 2023.10.31~ynh2
+**分发版本：** 2025.02.05~ynh1
 
 **演示：** <https://nitter.net/>
 

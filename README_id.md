@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Nitter untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/nitter.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/nitter)](https://ci-apps.yunohost.org/ci/apps/nitter/)
+![Status kerja](https://apps.yunohost.org/badge/state/nitter)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/nitter)
 
 [![Pasang Nitter dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
@@ -31,7 +33,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Versi terkirim:** 2023.10.31~ynh2
+**Versi terkirim:** 2025.02.05~ynh1
 
 **Demo:** <https://nitter.net/>
 

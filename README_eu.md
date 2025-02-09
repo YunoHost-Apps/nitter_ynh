@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Nitter YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/nitter.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/nitter)](https://ci-apps.yunohost.org/ci/apps/nitter/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/nitter)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/nitter)
 
 [![Instalatu Nitter YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
@@ -31,7 +33,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Paketatutako bertsioa:** 2023.10.31~ynh2
+**Paketatutako bertsioa:** 2025.02.05~ynh1
 
 **Demoa:** <https://nitter.net/>
 
