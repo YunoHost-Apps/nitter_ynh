@@ -10,12 +10,14 @@
 
 function build_nitter {
 	pushd "$install_dir"
+		ynh_exec_as $app touch $install_dir/sessions.jsonl
 		chown -R $app:$app $install_dir
-		sudo -u $app env "PATH=$install_dir/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" nimble build -d:release -y -d:danger --passC:"-flto" --passL:"-flto" 2>&1
-		sudo -u $app env "PATH=$install_dir/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" strip -s nitter  2>&1
-		sudo -u $app env "PATH=$install_dir/nim-installation/bin:$(sudo -u $app sh -c 'echo $PATH')" nimble scss -y 2>&1
+		ynh_exec_as $app env "PATH=$install_dir/nim-installation/bin:$(ynh_exec_as $app sh -c 'echo $PATH')" nimble build -d:danger -d:lto -d:strip --mm:refc 2>&1
+		ynh_exec_as $app env "PATH=$install_dir/nim-installation/bin:$(ynh_exec_as $app sh -c 'echo $PATH')" strip -s nitter  2>&1
+		ynh_exec_as $app env "PATH=$install_dir/nim-installation/bin:$(ynh_exec_as $app sh -c 'echo $PATH')" nimble scss -y 2>&1
+		ynh_exec_as $app env "PATH=$install_dir/nim-installation/bin:$(ynh_exec_as $app sh -c 'echo $PATH')" nimble md -y 2>&1
 		mkdir -p $install_dir/tmp
-		chown -R root:root $install_dir
+		#chown -R root:root $install_dir
 	popd
 }
 

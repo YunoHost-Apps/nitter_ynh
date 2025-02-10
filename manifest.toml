@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "nitter"
@@ -64,22 +66,20 @@ ram.runtime = "50M"
     default = ""
 
 [resources]
-        [resources.sources.main]
-        url = "https://github.com/zedeus/nitter/archive/fb7c1d87108f8e909448ed1707ebbc59e5e62325.tar.gz"
-        sha256 = "cd99acec02310802f6bbcea2abe36cffb0c9b49510126746803ed774e3e1d4ef"
-        autoupdate.strategy = "latest_github_commit"
+    [resources.sources.main]
+    url = "https://github.com/zedeus/nitter/archive/fb7c1d87108f8e909448ed1707ebbc59e5e62325.tar.gz"
+    sha256 = "cd99acec02310802f6bbcea2abe36cffb0c9b49510126746803ed774e3e1d4ef"
+    autoupdate.strategy = "latest_github_commit"
 
-        [resources.sources.nim]
-        amd64.url = "https://nim-lang.org/download/nim-1.6.14-linux_x64.tar.xz"
-        amd64.sha256 = "1e7073c05600f2be5f2d9018e73f4584f0369442455ab27521ca499b47eef904"
-        arm64.url = "https://github.com/nim-lang/nightlies/releases/download/2023-07-04-version-1-6-1cd48e4b2abd867adf1ab52a70a1d8f1c6ac77c4/nim-1.6.15-linux_arm64.tar.xz"
-        arm64.sha256 = "4ff08b1785e60bdac17fe4a40ce119b6f9d40fad0421e9576097f95122ce4125"
-        armhf.url = "https://github.com/nim-lang/nightlies/releases/download/2023-07-04-version-1-6-1cd48e4b2abd867adf1ab52a70a1d8f1c6ac77c4/nim-1.6.15-linux_armv7l.tar.xz"
-        armhf.sha256 = "7441e7feb3e3293c8662011e174d913ae276c853255f5792b31c3c2ec4d0ed30"
-        i386.url = "https://nim-lang.org/download/nim-1.6.14-linux_x32.tar.xz"
-        i386.sha256 = "18d285f62392b3cd725af91df4a7b3b99bbcd5446881725e18e372e3a2c3a89b"
-
-    [resources.ports]
+    [resources.sources.nim]
+    amd64.url = "https://nim-lang.org/download/nim-2.2.2-linux_x64.tar.xz"
+    amd64.sha256 = "b3c6d794732b27fab3beaf60551768c80eda3a8991634a1897029e72e87739cb"
+    arm64.url = "https://github.com/nim-lang/nightlies/releases/download/2025-02-06-version-2-2-6c34f62785263ad412f662f3e4e4bf8d8751d113/nim-2.2.2-linux_arm64.tar.xz"
+    arm64.sha256 = "8b2ef595066a8dc87e8b7648179107e70afda529712c84673f542cdf1b4dc1dc"
+    armhf.url = "https://github.com/nim-lang/nightlies/releases/download/2025-02-06-version-2-2-6c34f62785263ad412f662f3e4e4bf8d8751d113/nim-2.2.2-linux_armv7l.tar.xz"
+    armhf.sha256 = "ed9b70cf0fab7d6f8899e42daf90a90a1cad827183e4f381b59d60938d0c31f8"
+    i386.url = "https://nim-lang.org/download/nim-2.2.2-linux_x32.tar.xz"
+    i386.sha256 = "d8400d01d6a9f265294497ab9d14b7a956f7e768f2933ed4a55a9346bc1a2f87"
 
     [resources.system_user]
 
@@ -87,6 +87,8 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+
+    [resources.ports]
 
     [resources.apt]
     packages = ["acl", "nim", "libsass-dev", "redis-server"]
