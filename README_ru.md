@@ -5,7 +5,9 @@
 
 # Nitter для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/nitter.svg)](https://ci-apps.yunohost.org/ci/apps/nitter/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/nitter.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/nitter.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/nitter)](https://ci-apps.yunohost.org/ci/apps/nitter/)
+![Состояние работы](https://apps.yunohost.org/badge/state/nitter)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/nitter)
 
 [![Установите Nitter с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter)
 
@@ -31,7 +33,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**Поставляемая версия:** 2023.10.31~ynh2
+**Поставляемая версия:** 2025.02.05~ynh1
 
 **Демо-версия:** <https://nitter.net/>
 
