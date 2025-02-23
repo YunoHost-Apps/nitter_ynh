@@ -33,7 +33,7 @@ Inspired by the Invidious project.
 - Mobile support (responsive design)
 
 
-**分发版本：** 2025.02.16~ynh1
+**分发版本：** 2025.02.23~ynh1
 
 **演示：** <https://nitter.net/>
 
