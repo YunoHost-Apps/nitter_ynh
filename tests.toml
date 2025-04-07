@@ -1,9 +1,19 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/tests.v1.schema.json
+
 test_format = 1.0
 
 [default]
+
+    # ------------
+    # Tests to run
+    # ------------
+
+    # -------------------------------
+    # Default args to use for install
+    # -------------------------------
 
     # -------------------------------
     # Commits to test upgrade from
     # -------------------------------
 
-    test_upgrade_from.5b6368a92174768c22bd2fa97e327d822a8d42f3.name = "Upgrade from 2023.02.02"
+    test_upgrade_from.5b6368a92174768c22bd2fa97e327d822a8d42f3.name = "Upgrade from 2023.02.02~ynh1"
