@@ -7,7 +7,7 @@ name = "Nitter"
 description.en = "Alternative front-end for Twitter that respects your privacy"
 description.fr = "Interface alternative pour Twitter qui respecte votre vie privée"
 
-version = "2025.04.15~ynh1"
+version = "2025.05.01~ynh1"
 
 maintainers = ["Jules Bertholet"]
 
@@ -67,8 +67,8 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    url = "https://github.com/zedeus/nitter/archive/94c83f38114abaef10c36903fbcd59d78db7a578.tar.gz"
-    sha256 = "34695d074b53a23e3f9fe9f2a3122df16207937c7b81acf12768c25a1ea34edc"
+    url = "https://github.com/zedeus/nitter/archive/e40c61a6ae76431c570951cc4925f38523b00a82.tar.gz"
+    sha256 = "401cf55a96d20673e922963aaf68631e95765df3a56345a1ebb07ab5d127db9d"
     autoupdate.strategy = "latest_github_commit"
 
     [resources.sources.nim]
