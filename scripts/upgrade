@@ -29,7 +29,7 @@ ynh_setup_source --dest_dir="$install_dir/nim-installation" --source_id="nim" --
 #=================================================
 # COMPILE NITTER
 #=================================================
-ynh_script_progression "Compiling Nitter..."
+ynh_script_progression "Compiling $app..."
 
 build_nitter
 
