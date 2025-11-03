@@ -13,7 +13,6 @@ function build_nitter {
 		ynh_exec_as_app "PATH=$install_dir/nim-installation/bin:$(ynh_exec_as_app sh -c 'echo $PATH')" nimble scss -y 2>&1
 		ynh_exec_as_app "PATH=$install_dir/nim-installation/bin:$(ynh_exec_as_app sh -c 'echo $PATH')" nimble md -y 2>&1
 		mkdir -p $install_dir/tmp
-		chown -R root:root $install_dir
 	popd
 }
 
