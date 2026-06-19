@@ -93,4 +93,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = ["acl", "nim", "libsass-dev", "redis-server"]
+    packages = ["acl", "libpcre3", "libsass-dev", "redis-server"]
