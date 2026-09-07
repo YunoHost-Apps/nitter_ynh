@@ -19,13 +19,12 @@ admindoc = "https://github.com/zedeus/nitter/wiki"
 code = "https://github.com/zedeus/nitter"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = true
 
 disk = "50M"
