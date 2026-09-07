@@ -22,8 +22,6 @@ ynh_setup_source --dest_dir="$install_dir"
 ynh_setup_source --dest_dir="$install_dir/nim-installation" --source_id="nim"
 
 #=================================================
-# SPECIFIC SETUP
-#=================================================
 # COMPILE NITTER
 #=================================================
 ynh_script_progression "Compiling Nitter..."
