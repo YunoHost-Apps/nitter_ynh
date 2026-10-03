@@ -16,4 +16,4 @@ test_format = 1.0
     # Commits to test upgrade from
     # -------------------------------
 
-    test_upgrade_from.d2579fe7b92f353e4ec18c3b4597a8c766300315.name = "Upgrade from 2023.08.08~ynh1 (packaging v2 and no full_domain)"
+    test_upgrade_from.e3a7348b9567d6ca89205823e8e201faa918307d.name = "Upgrade from 2026.07.11~ynh1 (with Trixie deps fix)"
